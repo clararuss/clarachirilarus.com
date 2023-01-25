@@ -261,7 +261,6 @@ video {
 
 .gallery-item {
   height: 100%;
-  weight: 200;
   width: 100%;
   overflow: hidden;
   font-family: 'IBMPlexMono-Regular', 'IBMPlexMono-Bold', 'IBMPlexMono-Light', 'IBMPlexMono-SemiBold', Gneva, Verdana, sans-serif;
