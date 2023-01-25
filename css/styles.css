@@ -102,11 +102,12 @@ video {
 
 .logo a {
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1.35rem;
 }
 
 .nav-menu a {
   font-weight: 400;
+  font-size: .9rem;
   letter-spacing: 0.1rem;
   border-bottom: 1px solid #fff;
   transition: all ease 0.1s;
@@ -205,6 +206,7 @@ video {
 }
 
 .hero-heading {
+  font-family: 'IBMPlexMono-Regular', 'IBMPlexMono-Bold', 'IBMPlexMono-Light', 'IBMPlexMono-SemiBold', Gneva, Verdana, sans-serif;
   font-size: 2rem;
   line-height: 2rem;
   letter-spacing: 0.05rem;
@@ -247,6 +249,7 @@ video {
 .portfolio-container h1 {
   font-size: 2rem;
   line-height: 2rem;
+  font-family: 'IBMPlexMono-Regular', 'IBMPlexMono-Bold', 'IBMPlexMono-Light', 'IBMPlexMono-SemiBold', Gneva, Verdana, sans-serif;
 }
 
 .portfolio-gallery {
@@ -258,8 +261,10 @@ video {
 
 .gallery-item {
   height: 100%;
+  weight: 200;
   width: 100%;
   overflow: hidden;
+  font-family: 'IBMPlexMono-Regular', 'IBMPlexMono-Bold', 'IBMPlexMono-Light', 'IBMPlexMono-SemiBold', Gneva, Verdana, sans-serif;
 }
 
 .gallery-img {
@@ -286,8 +291,10 @@ video {
 }
 
 .about-text h1 {
+  font-family: 'IBMPlexMono-Regular', 'IBMPlexMono-Bold', 'IBMPlexMono-Light', 'IBMPlexMono-SemiBold', Gneva, Verdana, sans-serif;
   font-size: 2rem;
   line-height: 2rem;
+  
 }
 
 .about-image img {
@@ -335,6 +342,8 @@ video {
   .hero-heading {
     font-size: 4rem;
     line-height: 4rem;
+    font-family: 'IBMPlexMono-Regular', 'IBMPlexMono-Bold', 'IBMPlexMono-Light', 'IBMPlexMono-SemiBold', Gneva, Verdana, sans-serif;
+
   }
   .hero-text {
     font-size: 2rem;
