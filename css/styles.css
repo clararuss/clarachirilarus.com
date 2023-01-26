@@ -260,10 +260,10 @@ video {
 }
 
 .gallery-item {
+  font-family: 'IBMPlexMono-Regular', 'IBMPlexMono-Bold', 'IBMPlexMono-Light', 'IBMPlexMono-SemiBold', Gneva, Verdana, sans-serif;
   height: 100%;
   width: 100%;
   overflow: hidden;
-  font-family: 'IBMPlexMono-Regular', 'IBMPlexMono-Bold', 'IBMPlexMono-Light', 'IBMPlexMono-SemiBold', Gneva, Verdana, sans-serif;
 }
 
 .gallery-img {
