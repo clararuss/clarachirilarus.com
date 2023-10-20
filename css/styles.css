@@ -15,6 +15,19 @@ html {
   scroll-behavior: smooth;
 }
 
+h2 {
+  background-color: #FF10F0;
+  color:#fff;
+  padding-left: 3px;
+  padding-top: 2px;
+  padding-bottom: 5px;
+}
+
+a {
+ color: #FF10F0;
+ text-decoration: none; 
+}
+
 @media (prefers-reduced-motion) {
   html {
     scroll-behavior: initial;
