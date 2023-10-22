@@ -1,31 +1,36 @@
 /* basic styles */
 
 @font-face {
-  font-family: "IBMPlexMono";
-  src: url("IBMPlexMono-Regular.ttf");
+  font-family: "Martian Mono";
+  src: url("MartianMono-Regular.ttf") format('ttf');
+  src: url("MartianMono-Bold.ttf") format('ttf');
+  src: url("MartianMono-Light.ttf") format('ttf');
   
 }
 
 html {
   font-size: 100%;
-  line-height: 1.5rem;
+  line-height: 1.3rem;
   box-sizing: border-box;
-  font-family: 'IBMPlexMono-Regular', 'IBMPlexMono-Bold', 'IBMPlexMono-Light', 'IBMPlexMono-SemiBold', Gneva, Verdana, sans-serif;
-  height: 100%;
+  font-family: 'Martian Mono';
   scroll-behavior: smooth;
 }
 
-h2 {
+/* h2 {
   background-color: #FF10F0;
   color:#fff;
   padding-left: 3px;
-  padding-top: 2px;
-  padding-bottom: 5px;
-}
+  padding-top: 6px;
+  padding-bottom: 6px;
+  white-space: nowrap;
+  max-width: 100%;
+  overflow-x: hidden;
+} */
 
 a {
  color: #FF10F0;
  text-decoration: none; 
+ font-family: 'Martian Mono', sans-serif;
 }
 
 @media (prefers-reduced-motion) {
@@ -184,7 +189,7 @@ video {
 
 .hero-image-box::after {
   content: "";
-  /* background-color: rgba(0, 0, 0, 0.4); */
+  background-color: black;
   height: 100vh;
   width: 100%;
   position: absolute;
@@ -216,10 +221,11 @@ video {
   text-align: center;
   padding: 1rem;
   z-index: 10;
+  font-family: 'Martian Mono', sans-serif;
 }
 
 .hero-heading {
-  font-family: 'IBMPlexMono-Regular', 'IBMPlexMono-Bold', 'IBMPlexMono-Light', 'IBMPlexMono-SemiBold', Gneva, Verdana, sans-serif;
+  font-family: 'Martian Mono', sans-serif;
   font-size: 2rem;
   line-height: 2rem;
   letter-spacing: 0.05rem;
@@ -232,6 +238,7 @@ video {
   font-size: 1rem;
   margin-top: 0.5rem;
   color: white;
+  font-family: 'Martian Mono', sans-serif;
 }
 
 .hero-button {
@@ -244,6 +251,7 @@ video {
   border: 1px solid white;
   border-radius: 5px;
   margin-top: 2rem;
+  font-family: 'Martian Mono', sans-serif;
 }
 
 .hero-button:hover {
@@ -262,7 +270,7 @@ video {
 .portfolio-container h1 {
   font-size: 2rem;
   line-height: 2rem;
-  font-family: 'IBMPlexMono-Regular', 'IBMPlexMono-Bold', 'IBMPlexMono-Light', 'IBMPlexMono-SemiBold', Gneva, Verdana, sans-serif;
+  font-family: 'Martian Mono', sans-serif;
 }
 
 .portfolio-gallery {
@@ -273,7 +281,7 @@ video {
 }
 
 .gallery-item {
-  font-family: 'IBMPlexMono-Regular', 'IBMPlexMono-Bold', 'IBMPlexMono-Light', 'IBMPlexMono-SemiBold', Gneva, Verdana, sans-serif;
+  font-family: 'MartianMono-Regular', 'MartianMono-Bold', 'MartianMono-Light', 'MartianMono-SemiBold', Gneva, Verdana, sans-serif;
   height: 100%;
   width: 100%;
   overflow: hidden;
@@ -303,9 +311,9 @@ video {
 }
 
 .about-text h1 {
-  font-family: 'IBMPlexMono-Regular', 'IBMPlexMono-Bold', 'IBMPlexMono-Light', 'IBMPlexMono-SemiBold', Gneva, Verdana, sans-serif;
+  font-family: 'Martian Mono', sans-serif;
   font-size: 2rem;
-  line-height: 2rem;
+  line-height: 2.2rem;
   
 }
 
@@ -354,7 +362,7 @@ video {
   .hero-heading {
     font-size: 4rem;
     line-height: 4rem;
-    font-family: 'IBMPlexMono-Regular', 'IBMPlexMono-Bold', 'IBMPlexMono-Light', 'IBMPlexMono-SemiBold', Gneva, Verdana, sans-serif;
+    font-family: 'Martian Mono', sans-serif;
 
   }
   .hero-text {
@@ -441,3 +449,28 @@ video {
     width: 100%;
   }
 }
+
+.marquee {
+  width: 100%;
+  line-height: 50px;
+  background-color: magenta;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+.marquee h2 {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 15s linear infinite;
+  color: white;
+
+}
+@keyframes marquee {
+  0%   { transform: translate(0%, 0); }
+  100% { transform: translate(-100%, 0); 
+  }
+}
+
