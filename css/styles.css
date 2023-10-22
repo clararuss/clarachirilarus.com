@@ -33,6 +33,7 @@ a {
  font-family: 'Martian Mono', monospace;
 }
 
+
 @media (prefers-reduced-motion) {
   html {
     scroll-behavior: initial;
@@ -45,6 +46,11 @@ body {
   min-height: 100%;
   max-width: 100%;
   padding-bottom: 8rem;
+}
+
+p1 { 
+white-space: pre-wrap;
+padding-left: 20px;
 }
 
 *,
