@@ -244,6 +244,7 @@ video {
   font-weight: bold;
   text-transform: uppercase;
   color: white;
+  margin-top: 8rem;
 }
 
 .hero-text {
