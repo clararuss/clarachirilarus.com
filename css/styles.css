@@ -112,6 +112,7 @@ video {
   flex-shrink: 0;
   flex-basis: 33.3%;
   text-align: center;
+  gap: 0.5rem;
 }
 
 .social-nav-item {
@@ -192,7 +193,7 @@ video {
 }
 
 .hero-image-box {
-  height: 100vh;
+  /* height: 100vh; */
   width: 100%;
   display: grid;
   grid-column: 1 / -1;
@@ -202,20 +203,20 @@ video {
 .hero-image-box::after {
   content: "";
   background-color: black;
-  height: 100vh;
+  height: 0vh;
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
 }
 
-.hero-image,
+/* .hero-image,
 .hero-video {
   width: 100%;
   height: 100%;
   object-fit: cover;
   overflow: hidden;
-}
+} */
 
 .hero-video {
   background-color: #000;
@@ -409,7 +410,7 @@ video {
   }
   .nav-item {
     flex: 1 1;
-    padding: 0 0.2rem;
+    padding: 0 0.5rem;
   }
   .section-stop {
     scroll-margin-top: 9rem;
@@ -457,6 +458,7 @@ video {
   }
   .nav-item {
     padding: 0 0.5rem;
+    gap: 0.5rem;
   }
   .top-nav {
     width: 100%;
