@@ -55,6 +55,7 @@ padding-left: 20px;
 
 #text {
   padding-left: 20px;
+  padding-right: 20px;
 }
 
 *,
@@ -89,6 +90,7 @@ video {
 .logo,
 .nav-menu {
   /* text-transform: uppercase; */
+  gap: 1rem;
 }
 
 .logo,
@@ -100,11 +102,13 @@ video {
   list-style: none;
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-evenly;
+  justify-content: right;
   align-items: center;
+  /* padding-left: 2rem; */
   padding: 0;
   margin: 0;
   line-height: 1.5rem;
+  gap: .5rem;
 }
 
 .nav-item {
@@ -113,6 +117,10 @@ video {
   flex-basis: 33.3%;
   text-align: center;
   gap: 0.5rem;
+  justify-items: center;
+  border-style: dotted;
+  border-color: #fff;
+  border-radius: 50px;
 }
 
 .social-nav-item {
@@ -138,12 +146,12 @@ video {
 .nav-menu a {
   font-weight: 400;
   font-size: .9rem;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px dotted #fff;
   transition: all ease 0.1s;
 }
 
 .nav-menu a:hover {
-  border-bottom: 1px solid #000;
+  border-bottom: 3px dotted magenta;
 }
 
 /* Top Navbar Only Styles */
@@ -168,11 +176,11 @@ video {
 }
 
 .top-nav .nav-menu a {
-  border-bottom: 1px solid rgba(0, 0, 0, 0);
+  border-bottom: 0px dotted rgba(0, 0, 0, 0);
 }
 
 .top-nav .nav-menu a:hover {
-  border-bottom: 1px solid #fff;
+  border-bottom: 3px solid magenta;
 }
 
 /* Hero Styles */
@@ -267,7 +275,7 @@ video {
 }
 
 .hero-button:hover {
-  background: rgba(0, 0, 0, 0.3);
+  background: magenta;
 }
 
 .hero-button:active {
@@ -276,7 +284,7 @@ video {
 
 /* Portfolio Gallery Styles */
 .portfolio-container {
-  margin: 6rem auto 0 auto;
+  margin: 2.75rem auto 0 auto;
 }
 
 .portfolio-container h1 {
@@ -287,7 +295,7 @@ video {
 
 .portfolio-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-gap: 0.5rem;
   grid-auto-rows: 300px;
 }
@@ -306,7 +314,7 @@ video {
 }
 
 .gallery-img:hover {
-  transform: scale(1.5);
+  transform: scale(.8);
 }
 
 /* About Styles */
@@ -402,13 +410,17 @@ video {
   .nav-bar {
     line-height: 1.5rem;
     padding: 0 4rem;
+    gap: .5rem;
   }
   .nav-menu {
     padding: 0 1rem;
+    gap: .5rem;
+
   }
   .nav-item {
     flex: 1 1;
     padding: 1rem;
+    gap: .5;
   }
   .section-stop {
     scroll-margin-top: 9rem;
@@ -455,8 +467,8 @@ video {
     justify-self: end;
   }
   .nav-item {
-    padding: 0 0.5rem;
-    gap: 0.5rem;
+    padding: 0.5rem;
+    gap: 2rem;
   }
   .top-nav {
     width: 100%;
@@ -485,6 +497,12 @@ video {
 @keyframes marquee {
   0%   { transform: translate(0%, 0); }
   100% { transform: translate(-100%, 0); 
+  }
+}
+
+@media (min-width: 0px) {
+  .nav-bar {
+    gap: 1rem;
   }
 }
 
