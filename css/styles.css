@@ -309,13 +309,13 @@ video {
 
 .gallery-img {
   height: 100%;
-  object-fit: cover;
-  transition: 0.5s ease-in-out;
+  object-fit: contain;
+  /* transition: 0.5s ease-in-out; */
 }
 
-.gallery-img:hover {
+/* .gallery-img:hover {
   transform: scale(.8);
-}
+} */
 
 /* About Styles */
 
